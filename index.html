@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#achievement">Achievement</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hi,<br> I'm Sai Venkat K,<br>
+                Welcome to my Portfolio</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/img.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    During my first year at RVU studying CSE, I've managed to balance my love for coding with my 
+                    interests in cricket, volleyball, and video games. Beyond classes, playing video games is my 
+                    creative escape. Engaging in cricket, volleyball, and hitting the gym keeps me active and 
+                    healthy. This mix of technology, sports, and fitness defines my college experience. Below are
+                    my skills, education, and experience.
+                </p>
+            </div>
+            <div class="about-col-3">
+                <!-- Skills Section -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="row">
+                        <div class="tab-content-col">
+                            <ul>
+                                <li><span>UI</span><br>Designing Web Interfaces</li>
+                                <li><span>Web Development</span><br>App development</li>
+                                <li><span>C Programming</span><br>Beginner at C</li>
+                            </ul>
+                        </div>
+                        <!-- Add more tab-content-cols for additional columns -->
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education', event)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="edu">
+                    <ul>
+                        <li><span>2021</span><br>SSLC from SKCH</li>
+                        <li><span>2023</span><br>12th from KPU</li>
+                        <li><span>2027</span><br>B-Tech from RVU</li>
+                        <br> <!-- Add this line to create space -->
+                    </ul>
+                </div>
+
+                <!-- Experience Section -->
+                <p class="tab-links active-link" onclick="opentab('exp', event)">Experience</p>
+                <div class="tab-contents active-tab" id="exp">
+                    <ul>
+                        <li><span>Internship at eKart commerce</span></li>
+                        <li><span>Ui/Ux Design at Curl.Ltd</span></li>
+                        <!-- Add more experience items as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievement Section -->
+    <div id="achievement" class="container">
+        <h1>My Achievements</h1>
+        <div class="achievement-box">
+            <div class="box">
+                <div class="image-preview">
+                    <img src="assets/achievment  1.jpg" alt="Achievement 1">
+                </div>
+                <p>I had won the second place in a 400m race on taluk level</p>
+            </div>
+            <div class="box">
+                <div class="image-preview">
+                    <img src="assets/achievement 2.png" alt="Achievement 2">
+                </div>
+                <p>Created a website on 3d printing as a Mini Project</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>venkat22dec@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>6363714649</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <br><br>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="3" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Venkat</p>
+        </div>
+    </div>
+
+    <!-- Script Section -->
+    <script src="script.js" defer></script>
+</body>
+</html>
